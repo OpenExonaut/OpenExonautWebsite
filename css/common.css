@@ -57,6 +57,10 @@ main {
     margin: 20px;
 }
 
+main img {
+    max-width: 100%;
+}
+
 section:has(a) {
     display: flex;
     flex-wrap: wrap;

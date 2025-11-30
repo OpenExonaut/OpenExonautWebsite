@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exosuits - OpenExonaut</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/common.css">
+
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript-handling.css">
+    </noscript>
+    <script src="/js/load-data.js"></script>
+    <script src="/js/exosuits.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        <img alt="[Small logo]" src="/img/logo/small_logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="/blog.html">Blog</a>
+                </li>
+                <li>
+                    <strong><a href="/wiki.html">Wiki</a></strong>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/OpenExonaut/OpenExonaut">GitHub</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://discord.gg/ze3VczKHfZ">Discord</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Exosuits</h1>
+        <noscript>
+            <p>Sorry. The wiki requires JavaScript to fetch and process the live stat data.</p>
+        </noscript>
+        <div class="require-js">
+            <section>
+                <a href="#suit-name" style="display: none;" id="suit-template">
+                    <img class="suit-icon" alt="[TEMPLATE NAME icon]" src="/img/exosuits/ex_TEMPLATE.png">
+                    <h4>TEMPLATE NAME</h4>
+                </a>
+            </section>
+            <article style="display: none;">
+                <section>
+                    <h3 id="suit-name">TEMPLATE SUIT NAME</h3>
+                    <h5>Character from <i id="suit-show">TEMPLATE SHOW</i></h5>
+                    <img id="suit-image" class="suit-icon" alt="[TEMPLATE SUIT NAME icon]"
+                        src="/img/exosuits/ex_TEMPLATE.png">
+                    <p id="suit-description">TEMPLATE SUIT DESCRIPTION</p>
+                </section>
+                <section>
+                    <table>
+                        <caption>Suit Stats</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Stat</th>
+                                <th scope="col">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Faction</td>
+                                <td id="suit-faction">TEMPLATE FACTION</td>
+                            </tr>
+                            <tr>
+                                <td>Cost</td>
+                                <td id="suit-cost">TEMPLATE COST</td>
+                            </tr>
+                            <tr>
+                                <td>Available to guests</td>
+                                <td id="suit-guest">TEMPLATE GUEST</td>
+                            </tr>
+                            <tr>
+                                <td>Shield</td>
+                                <td id="suit-shield">TEMPLATE SHIELD</td>
+                            </tr>
+                            <tr>
+                                <td>Shield regen speed</td>
+                                <td id="suit-shield-regen-speed">TEMPLATE SHIELD REGEN SPEED</td>
+                            </tr>
+                            <tr>
+                                <td>Shield regen delay</td>
+                                <td id="suit-shield-regen-delay">TEMPLATE SHIELD REGEN DELAY</td>
+                            </tr>
+                            <tr>
+                                <td>Run speed modifier</td>
+                                <td id="suit-run-speed-modifier">TEMPLATE SUIT RUN SPEED MODIFIER</td>
+                            </tr>
+                            <tr>
+                                <td>Roll speed</td>
+                                <td id="suit-roll-speed">TEMPLATE ROLL SPEED</td>
+                            </tr>
+                            <tr>
+                                <td>Roll recovery speed</td>
+                                <td id="suit-roll-recovery-speed">TEMPLATE ROLL RECOVERY SPEED</td>
+                            </tr>
+                            <tr>
+                                <td>Jetpack speed modifier</td>
+                                <td id="suit-jetpack-speed-modifier">TEMPLATE JETPACK SPEED MODIFIER</td>
+                            </tr>
+                            <tr>
+                                <td>Jetpack speed factor</td>
+                                <td id="suit-jetpack-speed-factor">TEMPLATE JETPACK SPEED FACTOR</td>
+                            </tr>
+                            <tr>
+                                <td>Airdash max speed</td>
+                                <td id="suit-airdash-max-speed">TEMPLATE AIRDASH MAX SPEED</td>
+                            </tr>
+                            <tr>
+                                <td>Airdash max distance</td>
+                                <td id="suit-airdash-max-distance">TEMPLATE AIRDASH MAX DISTANCE</td>
+                            </tr>
+                            <tr>
+                                <td>Airdash speed decay</td>
+                                <td id="suit-airdash-speed-decay">TEMPLATE AIRDASH SPEED DECAY</td>
+                            </tr>
+                            <tr>
+                                <td>Ground jetpack acceleration</td>
+                                <td id="suit-ground-jetpack-acceleration">TEMPLATE GROUND JETPACK ACCELERATION</td>
+                            </tr>
+                            <tr>
+                                <td>Air jetpack acceleration</td>
+                                <td id="suit-air-jetpack-acceleration">TEMPLATE AIR JETPACK ACCELERATION</td>
+                            </tr>
+                            <tr>
+                                <td>Max fuel</td>
+                                <td id="suit-max-fuel">TEMPLATE MAX FUEL</td>
+                            </tr>
+                            <tr>
+                                <td>Fuel regen speed</td>
+                                <td id="suit-fuel-regen-speed">TEMPLATE FUEL REGEN SPEED</td>
+                            </tr>
+                            <tr>
+                                <td>Fuel regen delay</td>
+                                <td id="suit-fuel-regen-delay">TEMPLATE FUEL REGEN DELAY</td>
+                            </tr>
+                            <tr>
+                                <td>Boost pickup time</td>
+                                <td id="suit-boost-pickup-time">TEMPLATE BOOST PICKUP TIME</td>
+                            </tr>
+                            <tr>
+                                <td>Special weapon pickup time</td>
+                                <td id="suit-special-weapon-pickup-time">TEMPLATE SPECIAL WEAPON PICKUP TIME</td>
+                            </tr>
+                            <tr>
+                                <td>Crash free time</td>
+                                <td id="suit-crash-free-time">TEMPLATE CRASH FREE TIME</td>
+                            </tr>
+                            <tr>
+                                <td>Special weapon cooldown</td>
+                                <td id="suit-special-weapon-cooldown">TEMPLATE SPECIAL WEAPON COOLDOWN</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3 id="mod-name">TEMPLATE MOD NAME</h3>
+                    <h5>Mod for <i id="mod-weapon-name">TEMPLATE WEAPON NAME</i></h5>
+                    <img id="mod-weapon-image" alt="[TEMPLATE WEAPON NAME icon]" src="/img/weapons/TEMPLATE.jpg">
+                    <p id="mod-description">TEMPLATE MOD DESCRIPTION</p>
+                </section>
+                <section>
+                    <table>
+                        <caption>Mod Stats</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Stat</th>
+                                <th scope="col">Value Change</th>
+                                <th scope="col">Total Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Projectiles per fire</td>
+                                <td id="mod-delta-projectiles-per-fire">TEMPLATE DELTA PROJECTILES PER FIRE</td>
+                                <td id="mod-total-projectiles-per-fire">TEMPLATE TOTAL PROJECTILES PER FIRE</td>
+                            </tr>
+                            <tr>
+                                <td>Projectiles' spread</td>
+                                <td id="mod-delta-projectiles-spread">TEMPLATE DELTA PROJECTILES' SPREAD</td>
+                                <td id="mod-total-projectiles-spread">TEMPLATE TOTAL PROJECTILES' SPREAD</td>
+                            </tr>
+                            <tr>
+                                <td>Clip size</td>
+                                <td id="mod-delta-clip-size">TEMPLATE DELTA CLIP SIZE</td>
+                                <td id="mod-total-clip-size">TEMPLATE TOTAL CLIP SIZE</td>
+                            </tr>
+                            <tr>
+                                <td>Clip count</td>
+                                <td id="mod-delta-clip-count">TEMPLATE DELTA CLIP COUNT</td>
+                                <td id="mod-total-clip-count">TEMPLATE TOTAL CLIP COUNT</td>
+                            </tr>
+                            <tr>
+                                <td>Fire rate</td>
+                                <td id="mod-delta-fire-rate">TEMPLATE DELTA FIRE RATE</td>
+                                <td id="mod-total-fire-rate">TEMPLATE TOTAL FIRE RATE</td>
+                            </tr>
+                            <tr>
+                                <td>Reload rate</td>
+                                <td id="mod-delta-reload-rate">TEMPLATE DELTA RELOAD RATE</td>
+                                <td id="mod-total-reload-rate">TEMPLATE TOTAL RELOAD RATE</td>
+                            </tr>
+                            <tr>
+                                <td>Range</td>
+                                <td id="mod-delta-range">TEMPLATE DELTA RANGE</td>
+                                <td id="mod-total-range">TEMPLATE TOTAL RANGE</td>
+                            </tr>
+                            <tr>
+                                <td>Accuracy</td>
+                                <td id="mod-delta-accuracy">TEMPLATE DELTA ACCURACY</td>
+                                <td id="mod-total-accuracy">TEMPLATE TOTAL ACCURACY</td>
+                            </tr>
+                            <tr>
+                                <td>Damage per projectile</td>
+                                <td id="mod-delta-damage-per-projectile">TEMPLATE DELTA DAMAGE PER PROJECTILE</td>
+                                <td id="mod-total-damage-per-projectile">TEMPLATE TOTAL DAMAGE PER PROJECTILE</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright 2025 OpenExonaut contributors.</p>
+        <p>Project Exonaut, its game assets, and its characters Copyright 2011- Cartoon Network</p>
+    </footer>
+</body>
+
+</html>

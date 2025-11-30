@@ -1,0 +1,10 @@
+/* undo the text-align set by the common CSS */
+main {
+    text-align: initial;
+}
+
+/* redo the text-align for the headings */
+h1,
+h5 {
+    text-align: center;
+}

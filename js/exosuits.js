@@ -53,7 +53,6 @@ function placeSuitData(index) {
     document.getElementById("suit-fuel-regen-delay").innerText = suitData.Fuel_Delay;
     document.getElementById("suit-boost-pickup-time").innerText = suitData.Timer_Boosts;
     document.getElementById("suit-special-weapon-pickup-time").innerText = suitData.Timer_Sp_Weps;
-    document.getElementById("suit-crash-free-time").innerText = suitData.Timer_Free;
     document.getElementById("suit-special-weapon-cooldown").innerText = suitData.CoolDown_Sp_Weps;
 
     let modData = gamedata.mods[suitData.WeaponMod - 1];

@@ -65,7 +65,7 @@ function placeWeaponData(index) {
     document.getElementById("weapon-first-explosion-radius-damage").innerText = explosive ? weaponData.Radius1_Damage : "N/A";
     document.getElementById("weapon-second-explosion-radius").innerText = explosive ? weaponData.Radius2 : "N/A";
     document.getElementById("weapon-second-explosion-radius-damage").innerText = explosive ? weaponData.Radius2_Damage : "N/A";
-    document.getElementById("weapon-time-to-detonate").innerText = projectileType === "Grenade" ? weaponData.Expire_Time : "N/A";
+    document.getElementById("weapon-time-to-detonate").innerText = index === 8 ? 2.5 : (index === 5 ? 4 : "N/A"); // hardcoded numbers in client
     document.getElementById("weapon-velocity").innerText = projectileType === "Hitscan" ? "infinite" : weaponData.Velocity;
 }
 

@@ -130,13 +130,13 @@ tbody tr:nth-child(odd) {
 }
 
 .banzai {
-    box-shadow: 0 0 10px orange;
-    border: 1px solid orange;
+    box-shadow: 0 0 10px #c1361d;
+    border: 1px solid #c1361d;
 }
 
 .atlas {
-    box-shadow: 0 0 10px green;
-    border: 1px solid green;
+    box-shadow: 0 0 10px #797c42;
+    border: 1px solid #797c42;
 }
 
 /* just to get the button centered */
